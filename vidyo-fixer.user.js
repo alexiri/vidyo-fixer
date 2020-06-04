@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vidyo fixer
 // @namespace    http://cern.ch
-// @version      0.1
+// @version      0.2
 // @description  Stop showing vidyo banners when someone connects or disconnects
 // @author       Alex Iribarren
 // @match        https://webrtc.vidyo.cern.ch/*
@@ -11,6 +11,9 @@
 
 (function() {
     'use strict';
+
+    GM_addStyle('@import url(//fonts.googleapis.com/css?family=Coming+Soon);');
+    GM_addStyle('.conference-name { font-family: "Coming Soon"; }');
 
     GM_addStyle('.banners { visibility: hidden; }');
 })();
